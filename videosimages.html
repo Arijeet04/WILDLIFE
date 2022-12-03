@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Videosimages</title>
+<style>
+#head3{
+    display: flex;
+    justify-content: center;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: rgb(192, 116, 29);
+    width: 100%;
+    height: 100%;
+}
+video
+{
+    width: 50%;
+    border-radius:20px;
+}
+#thirdpage
+{
+    background-image: url("https://th-i.thgim.com/public/incoming/ant42i/article65958871.ece/alternates/FREE_1200/IMG_2150_26_3_2022_12_18_1_1_489L1VAE.jpg");
+    background-size: 100%;
+    background-attachment:fixed;
+}
+
+</style>
+</head>
+<body style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin: 0%;" id="thirdpage">
+ <div id="head3">Endangered Species</div><br>
+    
+    <center>
+    <h1>Information Center</h1>
+    Search : <input type="search" placeholder="Search">
+    <h3>Red Panda</h3>
+    <video controls>
+        <source src="videos/RedPanda.mp4" >
+    </video>
+    <div style="width: 60%">
+    <p>
+        The red panda (Ailurus fulgens), also known as the lesser panda, is a small mammal native to the eastern Himalayas and southwestern China. 
+        It has dense reddish-brown fur with a black belly and legs, white-lined ears, a mostly white muzzle and a ringed tail. 
+        Its head-to-body length is 51–63.5 cm (20.1–25.0 in) with a 28–48.5 cm (11.0–19.1 in) tail, and it weighs between 3.2 and 15 kg (7.1 and 33.1 lb). 
+        It is well adapted to climbing due to its flexible joints and curved semi-retractile claws.
+        The red panda was first formally described in 1825. The two currently recognised subspecies, 
+        the Himalayan and the Chinese red panda, genetically diverged about 250,000 years ago. 
+        The red panda's place on the evolutionary tree has been debated, but modern genetic evidence places it in close affinity with raccoons, weasels, and skunks.
+        It is not closely related to the giant panda, which is a bear, though both possess elongated wrist bones or "false thumbs" used for grasping bamboo. 
+        The evolutionary lineage of the red panda (Ailuridae) stretches back around 25 to 18 million years ago, as indicated by extinct fossil relatives found in Eurasia and North America.
+    </p>
+    </div>
+    <audio controls>
+        <source src="audios/red_panda.ogg">
+    </audio><br><br>
+    <h3>Kakapo</h3>
+    <video controls>
+        <source src="videos/Kakapo.mp4" width="60%">
+    </video>
+    <div style="width: 60%;">
+        <p>
+            The kākāpō (/ˈkɑːkəpoʊ/ KAH-kə-poh;[3] Māori: [kaːkaːpɔː];from the Māori: kākāpō, lit. 'night parrot'), 
+            also known as owl parrot (Strigops habroptilus), is a species of large, flightless, nocturnal, 
+            ground-dwelling parrots of the super-family Strigopoidea, endemic to New Zealand.
+            The kākāpō is critically-endangered; the total known adult population is 252 living individuals, 
+            all of which are named and tagged, confined to four small islands off the coast of New Zealand that have been cleared of predators.
+            The past introduction of predators such as cats, rats, ferrets, and stoats during British colonisation almost wiped out the already-rare kākāpō, having suffered over-hunting from the early Māori. 
+            Conservation efforts began in the 1890s, but they were not very successful until the implementation of the Kakapo Recovery Programme a century later in 1995.
+        </p>
+    </div>
+    <audio controls>
+        <source src="audios/Kakapo_sound.mp3">
+    </audio><br><br>
+    <h3>Giant Panda</h3>
+    <video controls >
+        <source src="videos/Panda.mp4" codecs="avc1.42E01E, mp4a.40.2">
+    </video>
+    <div style="width: 60%;">
+        <p>
+            The giant panda (Ailuropoda melanoleuca), also known as the panda bear (or simply the panda), is a bear species endemic to China.
+            It is characterised by its bold black-and-white coat and rotund body. The name "giant panda" is sometimes used to distinguish it from the red panda, 
+            a neighboring musteloid.The giant panda lives in a few mountain ranges in central China, mainly in Sichuan, and also in neighbouring Shaanxi and Gansu.
+            As a result of farming, deforestation, and other development, the giant panda has been driven out of the lowland areas where it once lived,and it is a conservation-reliant vulnerable species.
+        </p>
+    </div>
+    <audio controls>
+        <source src="audios/giant_panda.mp3">
+    </audio><br><br>
+    <h3>Wolf</h3>
+    <video controls>
+        <source src="videos/wolf.mp4" width="40%">
+    </video>
+    <div style="width: 60%;">
+        <p>
+            The wolf (Canis lupus;[b] pl: wolves), also known as the gray wolf or grey wolf, is a large canine native to Eurasia and North America. 
+            More than thirty subspecies of Canis lupus have been recognized, and gray wolves, as popularly understood, comprise wild subspecies. 
+            The wolf is the largest extant member of the family Canidae. It is also distinguished from other Canis species by its less pointed ears and muzzle. 
+            The wolf is nonetheless related closely enough to smaller Canis species, such as the coyote and the golden jackal, to produce fertile hybrids with them. 
+            The banded fur of a wolf is usually mottled white, brown, gray, and black, although subspecies in the arctic region may be nearly all white.
+        </p>
+    </div>
+    <audio controls>
+        <source src="audios/wolf_howl.mp3 ">
+    </audio><br><br>
+    
+    <div style="background-color:rgb(233, 218, 159);width: 60%;border-radius: 20px;"><h3>Report Your Findings</h3>
+    <table cellpadding="20px">
+        <tr>
+            <td align="right">Animal Name:</td>
+            <td align="center"><input type="Text" name="aname"></td>
+        </tr>
+        <tr>
+            <td align="right">Coordinates:</td>
+            <td align="center"><input type="button" onclick="getlocation()" value="Locate me"><br>
+                <span ><p id="demo1"></p></span></td>
+        </tr>
+        <tr>
+            <td align="right">Choose Color:</td>
+            <td align="center"><input type="color"></td>
+        </tr>
+        <tr>
+            <td align="right">Submit sighting pictures:</td>
+            <td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="file"></td>
+        </tr>
+        <tr>
+            <td align="right">Date Of Sighting:</td>
+            <td align="center"><input type="date"></td>
+        </tr>
+    </table><br>
+    <input type="submit">
+<br><br>
+</div>
+</center>
+    
+    
+    <script>
+        var variable1 = document.getElementById("demo1");
+        function getlocation() {
+          navigator.geolocation.getCurrentPosition(showLoc);
+        }
+        function showLoc(pos) {
+          variable1.innerHTML =
+            "Latitude: " +
+            pos.coords.latitude +
+            "<br>Longitude: " +
+            pos.coords.longitude;
+        }
+    </script> 
+</body>
+</html>
