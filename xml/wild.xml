@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="wild.xsl"?>
+<?xml-model href="wild.xsd"?>
+<WildlifeInfo>
+  <s>
+   <Sno>101</Sno>
+   <Species>African_forest_elephant</Species>
+   <Status>Critically_Endangered</Status>
+   <Location>Africa</Location>
+  </s>
+  <s>
+   <Sno>102</Sno>
+   <Species>Black_Rhino</Species>
+   <Status>Critically_Endangered</Status>
+   <Location>Africa</Location>
+   
+  </s>
+  <s> 
+    <Sno>103</Sno>
+    <Species>Blue_Whale</Species>
+    <Status>Endangered</Status>
+    <Location>Artic</Location>
+  </s>
+  <s> 
+    <Sno>104</Sno>
+    <Species>Ganges_River_Dolphin</Species>
+    <Status>Endangered</Status>
+    <Location>India,Nepal,Bangladesh</Location>
+  </s>
+  <s> 
+    <Sno>105</Sno>
+    <Species>Red_Panda</Species>
+    <Status>Endangered</Status>
+    <Location>Eastern_Himalayas,Arunchal_Pradesh</Location>
+  </s>
+ </WildlifeInfo>
