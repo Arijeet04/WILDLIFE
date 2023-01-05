@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sighting info</title>
+    <script src="angular.min.js"></script>
+    <script src="lab7.js"></script>
+    <link rel="stylesheet" href="lab7.css">
+</head>
+
+<body ng-app="Packages">
+    <div ng-controller="Packagesctrl">
+        
+        <br>
+        Rows to display:  <input type="number" step="1" min="0" max="5" ng-model="rowlimit"/><br><br>
+        Search:  <input type="text" placeholder="Search for animals" ng-model="search"><br><br>
+        Enter the number of characters:  <input type="text" placeholder="Enter no. of characters" ng-model="limit"><br><br>
+        <center>
+        <table>
+            <tr>
+                <th>Name
+                    <br>
+                    <input type="text" ng-model="search.name" placeholder="Search name">
+                </th>
+                <th>Date of sighting
+                    <br>
+                    <input type="text" ng-model="search.doa" placeholder="Search date">
+                </th>
+                <th>Location
+                    <br>
+                    <input type="text" ng-model="search.location" placeholder="Search location">
+                </th>
+                <th>Species
+                    <br>
+                    <input type="text" ng-model="search.species" placeholder="Search species">
+                </th>
+                <th>Genus
+                    <br>
+                    <input type="text" ng-model="search.genus" placeholder="Search genus">
+                </th>
+              
+            </tr>
+            <tbody>
+                <tr ng-repeat="htl in items|limitTo:rowlimit|filter:search">
+                    <td>{{htl.name|namefilter:limit}}</td>
+                    <td>{{htl.doa|date:"dd/MM/yyyy"}}</td>
+                    <td>{{htl.location|uppercase}}</td>
+                    <td>{{htl.species|uppercase}}</td>
+                    <td>{{htl.genus|uppercase}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    </div>
+    
+</body>
+</html>
