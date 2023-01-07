@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    </head>
+    <body ng-app="MyApp">
+        <p><a href="#/!"> Main</a></p>
+        <p><a href="#!end">Endangered Species</a></p>
+        <p><a href="#!exo">Exotic Species</a></p>
+        <div ng-view ng-controller="MyCtrl"></div>
+        <script>
+            var app=angular.module("MyApp",["ngRoute"]);
+            app.config(function($routeProvider){
+            $routeProvider
+            .when("/",{
+                templateUrl : "main.htm"
+            })
+            .when("/end",{
+                templateUrl : "lab8end.html"
+            })
+            .when("/exo",{
+                templateUrl : "lab8exo.html"
+            });
+            });
+            app.controller("MyCtrl",function($scope,$http){
+           $http.get("lab8.json").then(function(response){
+           $scope.mydata=response.data.records;
+           });
+        });
+        </script>
+    </body>
+</html>

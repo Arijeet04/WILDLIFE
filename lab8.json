@@ -1,0 +1,58 @@
+{"records":[
+   {
+    "id":"End",
+    "name":"Kakapo",
+    "species":"Strigopoidea",
+    "alive":252,
+    "habitat":"New Zealand"
+   },
+   {
+    "id":"End",
+    "name":"Red Panda",
+    "species":"Ailurus fulgens fulgens",
+    "alive":10000,
+    "habitat":"Arunachal Pradesh"
+   },
+   {
+    "id":"End",
+    "name":"Wolf",
+    "species":"Canis lupus",
+    "alive":17780,
+    "habitat":"North Amercica"
+   },
+   {
+    "id":"End",
+    "name":"Greta Indian Bustard",
+   "species":"A.nigriceps",
+   "alive":249,
+   "habitat":"Rajasthan"
+   },
+   {
+    "id":"Exo",
+    "name":"Nilgiri Thar",
+    "species":"Nilgiritragus hylocrius",
+    "alive":700,
+    "habitat":"Kerela"
+   },
+   {
+    "id":"Exo",
+    "name":"Greater One-horned Rhinoceros",
+    "species":"Rhinocerotidae;",
+    "alive": 2613,
+    "habitat":"Assam"
+   },
+   {
+    "id":"Exo",
+    "name":"Asiatic Lion",
+    "species":"Panthera leo leo",
+    "alive":674,
+    "habitat":"Gujrat"
+   },
+   {
+    "id":"Exo",
+    "name":"Snow Leopard",
+   "species":"Panthera uncia",
+   "alive":6390,
+   "habitat":"Himalaya"
+   }
+]}
